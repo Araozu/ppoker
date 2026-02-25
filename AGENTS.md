@@ -33,8 +33,8 @@ In `src/routes/layout.css`, use the following utilities for consistent skeuomorp
 
 ### 1. Always use shadcn-svelte
 - When adding new UI elements, check if a shadcn component exists first.
-- If you need a new component, install it via `npx shadcn-svelte@latest add <component-name>`.
-- **Constraint**: Wrap or style shadcn components with skeuomorphic overrides. For example, a shadcn `Button` should use the `.skuo-button` utility or similar gradients.
+- If you need a new component, install it via `pnpx shadcn-svelte@latest add <component-name> -y`.
+- **Constraint**: Style shadcn components with skeuomorphic overrides. After installing a shadcn component, alter its styles to use skeumorphism.
 
 ### 2. Don't Hardcode Tailwind Styles
 - **Use CSS Variables**: Prefer using the standard shadcn/tailwind variables (e.g., `var(--background)`, `var(--primary)`, `var(--radius)`).
