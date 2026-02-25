@@ -112,26 +112,26 @@
 
   /* Skeuomorphic Utilities */
   --shadow-skuo-raised: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 3px rgba(0, 0, 0, 0.2);
-  --shadow-skuo-pressed: inset 0 2px 4px rgba(0,0,0,0.2);
-  --shadow-skuo-gloss: inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -1px 0 rgba(255,255,255,0.2);
-  
-  --image-linen: url('https://www.transparenttextures.com/patterns/linen.png');
+  --shadow-skuo-pressed: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-skuo-gloss: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.2);
 }
 
 @layer utilities {
   .bg-glass-glossy {
-    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0.1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.1) 100%);
     backdrop-filter: blur(10px);
   }
-  
+
   .bg-linen {
-    background-image: var(--image-linen);
-    background-color: #4b4b4b;
+    background-color: #3b3b3b;
+    background-image:
+      repeating-linear-gradient(to right, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 3px),
+      repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 0, rgba(255, 255, 255, 0.03) 1px, transparent 1px, transparent 3px);
   }
-  
+
   .skuo-button {
     box-shadow: var(--shadow-skuo-raised), var(--shadow-skuo-gloss);
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
     @apply transition-all active:translate-y-[1px] active:shadow-skuo-pressed;
   }
@@ -141,6 +141,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

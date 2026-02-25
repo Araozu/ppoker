@@ -25,7 +25,7 @@ The project follows a **"Late Skeuomorphic"** aesthetic, inspired by iOS 6 and O
 ### Pre-defined Utilities
 In `src/routes/layout.css`, use the following utilities for consistent skeuomorphism:
 - `.skuo-button`: Basic glossy button effect.
-- `.bg-linen`: Classic iOS linen texture.
+- `.bg-linen`: Pure CSS iOS-style linen texture.
 - `.bg-glass-glossy`: Glass effect with reflection.
 - `var(--shadow-skuo-raised)` / `var(--shadow-skuo-pressed)`: For custom elevation changes.
 
