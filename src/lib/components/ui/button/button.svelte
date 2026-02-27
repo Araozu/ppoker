@@ -9,10 +9,10 @@
 			variant: {
 				default: 'skuo-button text-primary-foreground',
 				destructive:
-					'bg-destructive hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 text-white shadow-xs',
+					'skuo-button text-white [background:linear-gradient(to_bottom,oklch(0.65_0.245_27.325),oklch(0.50_0.245_27.325))] focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40',
 				outline:
-					'bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs',
-				secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-xs',
+					'skuo-button text-accent-foreground [background:linear-gradient(to_bottom,#ffffff,#f0f0f0)] dark:bg-input/30 dark:border-input',
+				secondary: 'skuo-button text-secondary-foreground [background:linear-gradient(to_bottom,oklch(0.97_0.001_286),oklch(0.92_0.004_286))]',
 				ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
 				link: 'text-primary underline-offset-4 hover:underline'
 			},
