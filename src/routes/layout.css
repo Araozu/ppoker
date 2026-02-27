@@ -133,7 +133,7 @@
     box-shadow: var(--shadow-skuo-raised), var(--shadow-skuo-gloss);
     border: 1px solid rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
-    @apply transition-all active:translate-y-[1px] active:shadow-skuo-pressed;
+    @apply transition-all active:translate-y-[1px] active:[box-shadow:var(--shadow-skuo-pressed)];
   }
 }
 
